@@ -18,7 +18,7 @@ public class Interval {
             }
         };
 
-        executor.scheduleAtFixedRate(periodicTask, 0, 30, TimeUnit.SECONDS);
+        executor.scheduleAtFixedRate(periodicTask, 0, 1, TimeUnit.HOURS);
     }
 
 }
