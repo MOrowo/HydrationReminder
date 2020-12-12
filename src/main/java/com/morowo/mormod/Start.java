@@ -1,6 +1,7 @@
 package com.morowo.mormod;
 
 import com.morowo.mormod.command.HydrationCommand;
+import com.morowo.mormod.command.InfoCommand;
 import com.morowo.mormod.util.onPlayerJoin;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegisterCommandsEvent;
@@ -42,6 +43,7 @@ public class Start
     @SubscribeEvent
     public void CommandRegister(RegisterCommandsEvent event) {
         HydrationCommand.hydrateCommand(event.getDispatcher());
+        InfoCommand.infoCommand(event.getDispatcher());
     }
 
 }

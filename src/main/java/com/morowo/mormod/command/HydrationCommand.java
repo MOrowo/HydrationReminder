@@ -13,7 +13,7 @@ public class HydrationCommand {
         dispatcher.register(
                 Commands.literal("hydrate")
                     .executes(c -> {
-                        //Function
+                        Minecraft.getInstance().player.sendMessage(new StringTextComponent("Hydrate!"), null);
                         return 1;
                     })
         );
